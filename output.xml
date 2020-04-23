@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.2 on win32)" generated="20200423 13:47:34.958" rpa="false">
+<suite id="s1" name="Test" source="C:\Users\user\PycharmProjects\Automation_py\dev\test.robot">
+<test id="s1-t1" name="Hello">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>browser=${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200423 13:47:35.273" level="INFO">Opening browser 'chrome' to base url 'https://live2.empxtrack.com/empxtrack/'.</msg>
+<status status="PASS" starttime="20200423 13:47:35.273" endtime="20200423 13:49:24.563"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${path1}</arg>
+<arg>${user_name}</arg>
+</arguments>
+<msg timestamp="20200423 13:49:24.579" level="INFO">Typing text 'MSTPL437' into text field 'xpath://*[@id="usr_1"]'.</msg>
+<status status="PASS" starttime="20200423 13:49:24.578" endtime="20200423 13:49:24.700"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${path2}</arg>
+<arg>${pass}</arg>
+</arguments>
+<msg timestamp="20200423 13:49:24.701" level="INFO">Typing text 'Royalabhi128921' into text field 'xpath://*[@id="pId"]'.</msg>
+<status status="PASS" starttime="20200423 13:49:24.700" endtime="20200423 13:49:24.827"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${path3}</arg>
+<arg>${company_name}</arg>
+</arguments>
+<msg timestamp="20200423 13:49:24.828" level="INFO">Typing text 'Moolya' into text field 'xpath://*[@id="location"]'.</msg>
+<status status="PASS" starttime="20200423 13:49:24.828" endtime="20200423 13:49:24.930"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${login_button}</arg>
+</arguments>
+<msg timestamp="20200423 13:49:24.931" level="INFO">Clicking element 'xpath://input[@value="Login"]'.</msg>
+<status status="PASS" starttime="20200423 13:49:24.931" endtime="20200423 13:50:35.059"></status>
+</kw>
+<status status="PASS" starttime="20200423 13:47:35.272" endtime="20200423 13:50:35.059" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200423 13:47:34.958" endtime="20200423 13:50:35.063"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
