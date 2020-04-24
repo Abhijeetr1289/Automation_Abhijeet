@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.8.2 on win32)" generated="20200423 13:47:34.958" rpa="false">
+<robot generator="Robot 3.1.2 (Python 3.8.2 on win32)" generated="20200423 21:30:18.479" rpa="false">
 <suite id="s1" name="Test" source="C:\Users\user\PycharmProjects\Automation_py\dev\test.robot">
-<test id="s1-t1" name="Hello">
+<test id="s1-t1" name="Flow 1">
+<kw name="Login to Empxtrack" library="keyword">
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
 <arguments>
 <arg>${URL}</arg>
 <arg>browser=${BROWSER}</arg>
 </arguments>
-<msg timestamp="20200423 13:47:35.273" level="INFO">Opening browser 'chrome' to base url 'https://live2.empxtrack.com/empxtrack/'.</msg>
-<status status="PASS" starttime="20200423 13:47:35.273" endtime="20200423 13:49:24.563"></status>
+<msg timestamp="20200423 21:30:18.792" level="INFO">Opening browser 'chrome' to base url 'https://live2.empxtrack.com/empxtrack/'.</msg>
+<status status="PASS" starttime="20200423 21:30:18.792" endtime="20200423 21:30:29.339"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -17,8 +18,8 @@
 <arg>${path1}</arg>
 <arg>${user_name}</arg>
 </arguments>
-<msg timestamp="20200423 13:49:24.579" level="INFO">Typing text 'MSTPL437' into text field 'xpath://*[@id="usr_1"]'.</msg>
-<status status="PASS" starttime="20200423 13:49:24.578" endtime="20200423 13:49:24.700"></status>
+<msg timestamp="20200423 21:30:29.340" level="INFO">Typing text '******' into text field 'xpath://*[@id="usr_1"]'.</msg>
+<status status="PASS" starttime="20200423 21:30:29.339" endtime="20200423 21:30:29.453"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -26,8 +27,8 @@
 <arg>${path2}</arg>
 <arg>${pass}</arg>
 </arguments>
-<msg timestamp="20200423 13:49:24.701" level="INFO">Typing text 'Royalabhi128921' into text field 'xpath://*[@id="pId"]'.</msg>
-<status status="PASS" starttime="20200423 13:49:24.700" endtime="20200423 13:49:24.827"></status>
+<msg timestamp="20200423 21:30:29.453" level="INFO">Typing text '*********' into text field 'xpath://*[@id="pId"]'.</msg>
+<status status="PASS" starttime="20200423 21:30:29.453" endtime="20200423 21:30:29.594"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -35,30 +36,178 @@
 <arg>${path3}</arg>
 <arg>${company_name}</arg>
 </arguments>
-<msg timestamp="20200423 13:49:24.828" level="INFO">Typing text 'Moolya' into text field 'xpath://*[@id="location"]'.</msg>
-<status status="PASS" starttime="20200423 13:49:24.828" endtime="20200423 13:49:24.930"></status>
+<msg timestamp="20200423 21:30:29.594" level="INFO">Typing text 'Moolya' into text field 'xpath://*[@id="location"]'.</msg>
+<status status="PASS" starttime="20200423 21:30:29.594" endtime="20200423 21:30:29.707"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${login_button}</arg>
 </arguments>
-<msg timestamp="20200423 13:49:24.931" level="INFO">Clicking element 'xpath://input[@value="Login"]'.</msg>
-<status status="PASS" starttime="20200423 13:49:24.931" endtime="20200423 13:50:35.059"></status>
+<msg timestamp="20200423 21:30:29.707" level="INFO">Clicking element 'xpath://input[@value="Login"]'.</msg>
+<status status="PASS" starttime="20200423 21:30:29.707" endtime="20200423 21:30:31.672"></status>
 </kw>
-<status status="PASS" starttime="20200423 13:47:35.272" endtime="20200423 13:50:35.059" critical="yes"></status>
+<status status="PASS" starttime="20200423 21:30:18.792" endtime="20200423 21:30:31.672"></status>
+</kw>
+<status status="PASS" starttime="20200423 21:30:18.776" endtime="20200423 21:30:31.673" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20200423 13:47:34.958" endtime="20200423 13:50:35.063"></status>
+<test id="s1-t2" name="Flow 2">
+<kw name="Mark Attendance" library="keyword">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${attan_icon}</arg>
+</arguments>
+<msg timestamp="20200423 21:30:31.678" level="FAIL">Variable '${attan_icon}' not found. Did you mean:
+    ${atten_icon}</msg>
+<status status="FAIL" starttime="20200423 21:30:31.677" endtime="20200423 21:30:31.678"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.677" endtime="20200423 21:30:31.678"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.676" endtime="20200423 21:30:31.679" critical="yes">Variable '${attan_icon}' not found. Did you mean:
+    ${atten_icon}</status>
+</test>
+<test id="s1-t3" name="Flow 3">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<kw name="Close Browser" library="keyword">
+<msg timestamp="20200423 21:30:31.699" level="FAIL">Maximum limit of started keywords exceeded.</msg>
+<status status="FAIL" starttime="20200423 21:30:31.699" endtime="20200423 21:30:31.700"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.698" endtime="20200423 21:30:31.700"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.698" endtime="20200423 21:30:31.700"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.698" endtime="20200423 21:30:31.700"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.697" endtime="20200423 21:30:31.700"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.697" endtime="20200423 21:30:31.700"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.696" endtime="20200423 21:30:31.700"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.696" endtime="20200423 21:30:31.700"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.696" endtime="20200423 21:30:31.701"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.695" endtime="20200423 21:30:31.701"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.695" endtime="20200423 21:30:31.701"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.694" endtime="20200423 21:30:31.701"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.694" endtime="20200423 21:30:31.701"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.693" endtime="20200423 21:30:31.701"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.693" endtime="20200423 21:30:31.701"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.693" endtime="20200423 21:30:31.702"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.692" endtime="20200423 21:30:31.702"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.692" endtime="20200423 21:30:31.702"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.692" endtime="20200423 21:30:31.702"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.691" endtime="20200423 21:30:31.702"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.691" endtime="20200423 21:30:31.702"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.691" endtime="20200423 21:30:31.702"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.690" endtime="20200423 21:30:31.703"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.690" endtime="20200423 21:30:31.703"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.690" endtime="20200423 21:30:31.703"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.689" endtime="20200423 21:30:31.703"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.689" endtime="20200423 21:30:31.703"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.689" endtime="20200423 21:30:31.703"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.688" endtime="20200423 21:30:31.703"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.688" endtime="20200423 21:30:31.704"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.688" endtime="20200423 21:30:31.704"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.687" endtime="20200423 21:30:31.704"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.687" endtime="20200423 21:30:31.704"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.686" endtime="20200423 21:30:31.704"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.686" endtime="20200423 21:30:31.704"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.686" endtime="20200423 21:30:31.705"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.685" endtime="20200423 21:30:31.705"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.685" endtime="20200423 21:30:31.705"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.684" endtime="20200423 21:30:31.705"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.684" endtime="20200423 21:30:31.705"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.683" endtime="20200423 21:30:31.705"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.682" endtime="20200423 21:30:31.705"></status>
+</kw>
+<status status="FAIL" starttime="20200423 21:30:31.681" endtime="20200423 21:30:31.706" critical="yes">Maximum limit of started keywords exceeded.</status>
+</test>
+<status status="FAIL" starttime="20200423 21:30:18.479" endtime="20200423 21:30:31.708"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0">Critical Tests</stat>
-<stat pass="1" fail="0">All Tests</stat>
+<stat pass="1" fail="2">Critical Tests</stat>
+<stat pass="1" fail="2">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="Test">Test</stat>
+<stat pass="1" fail="2" id="s1" name="Test">Test</stat>
 </suite>
 </statistics>
 <errors>
